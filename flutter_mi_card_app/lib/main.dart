@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
               ),
               Text(
                 'FLUTTER DEVELOPER',
-                style: GoogleFonts.sourceSansPro(
+                style: GoogleFonts.sourceSans3(
                   textStyle: TextStyle(
                     fontSize: 24.0,
                     color: Colors.white,
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(Icons.phone, color: Colors.green),
                   title: Text('+55 83 99403-7960',
-                      style: GoogleFonts.sourceSansPro(
+                      style: GoogleFonts.sourceSans3(
                           textStyle: TextStyle(
                         fontSize: 18.0,
                         color: Colors.green.shade900,
@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
                   leading: Icon(Icons.mail, color: Colors.green),
                   title: Text(
                     'allanramos.teixeira@gmail.com',
-                    style: GoogleFonts.sourceSansPro(
+                    style: GoogleFonts.sourceSans3(
                         textStyle: TextStyle(
                       fontSize: 18,
                       color: Colors.green.shade900,

@@ -37,13 +37,13 @@ class _BozohPageState extends State<BozohPage> {
     return Center(
       child: Row(children: [
         Expanded(
-          child: FlatButton(
+          child: TextButton(
             onPressed: changeBozohFace,
             child: Image.asset('images/dice$leftBozohNumber.png'),
           ),
         ),
         Expanded(
-          child: FlatButton(
+          child: TextButton(
             onPressed: changeBozohFace,
             child: Image.asset('images/dice$rightBozohNumber.png'),
           ),

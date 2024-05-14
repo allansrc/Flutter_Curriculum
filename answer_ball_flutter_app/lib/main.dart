@@ -30,7 +30,7 @@ class _AnswerPageState extends State<AnswerPage> {
         backgroundColor: Colors.blueGrey.shade900,
       ),
       body: Center(
-        child: FlatButton(
+        child: TextButton(
           onPressed: getAnswer,
           child: Image.asset('images/ball$ballNumber.png'),
         ),

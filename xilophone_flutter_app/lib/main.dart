@@ -1,21 +1,21 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audio_cache.dart';
 
 void main() => runApp(MaterialApp(home: XiloPage()));
 
 class XiloPage extends StatelessWidget {
   void playSound(int note) {
     AudioCache player = AudioCache();
-    player.play('note$note.wav');
+    player.loadPath('note$note.wav');
   }
 
   Expanded buildKey(Color color, int number) {
     return Expanded(
-      child: FlatButton(
+      child: TextButton(
         onPressed: () {
           playSound(number);
         },
-        color: color,
+        style: TextButton.styleFrom(backgroundColor: color),
         child: Icon(Icons.music_note),
       ),
     );

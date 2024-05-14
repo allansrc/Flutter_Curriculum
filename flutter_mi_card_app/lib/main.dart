@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
               CircleAvatar(
                 backgroundImage: AssetImage('images/profile_pic.jpeg'),
                 radius: 50.0,
-//                backgroundColor: Colors.red,
               ),
               Text(
                 'Allan Ramos',

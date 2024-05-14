@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 void main() => runApp(MaterialApp(home: XiloPage()));
 
 class XiloPage extends StatelessWidget {
-  void playSound(int note) {
-    AudioCache player = AudioCache();
-    player.loadPath('note$note.wav');
+  void playSound(int note) async {
+    final player = AudioPlayer();
+    player.play(AssetSource('note$note.wav'));
   }
 
   Expanded buildKey(Color color, int number) {
